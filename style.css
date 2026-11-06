@@ -297,3 +297,53 @@ footer {
         padding: 5rem 5% 3rem 5%;
     }
 }
+/* --- Responsive fixes --- */
+html {
+    scroll-behavior: smooth;
+}
+
+.projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+.skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+}
+
+.about-image img {
+    width: min(240px, 70%);
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+}
+
+.hero-buttons {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.75rem 5%;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        padding: 8rem 5% 3rem 5%;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .about-container {
+        padding: 1.5rem;
+    }
+}
